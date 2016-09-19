@@ -1,0 +1,13 @@
+#Create the instance
+- hosts: localhost
+  user: ubuntu
+  connection: local
+  gather_facts: false
+  vars_files:
+    - vars/all.yml
+
+- hosts: myserver
+  remote_user: ubuntu
+  gather_facts: true
+  vars_files:
+    - vars/all.yml
