@@ -1,0 +1,14 @@
+---
+ec2_config:
+  region: us-west-2
+  zone: us-west-2c
+  keypair: ansible
+  instance_type: t1.micro
+  image: ami-6989a659
+  vpc_subnet_id: subnet-88ec6fd0
+  group: default
+  assign_public_ip: true
+  volume_size: 8
+  instance_tag_name: CloudForce
+  remote_user: ubuntu
+  ssh_path: ~/.ssh/id_ansible
